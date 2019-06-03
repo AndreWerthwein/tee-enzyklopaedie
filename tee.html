@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- FavIcon Desktop PC -->
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- FavIcon Mobile-Endgeräte -->
+	<link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="favicon_32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon_96x96.png" sizes="96x96">
+    
+    <!-- "App Icon" für iOS, wenn die Website zum Home-Screen hinzugefügt wird. -->
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="apple-touch-icon.png">
+    
+    <!-- "App Icon" für Microsoft, wenn die Website zum Home-Screen/Menü hinzugefügt wird. -->
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="mstile-144x144.png">
+    
+    <!-- Zeichenkodierung, etc. -->
+	<meta http-equiv="Content-Type" content="text/html" />
+    <meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" >
+    
+    <!-- META-Tags zum Autor/Ersteller/Copyright-Inhaber -->
+	<meta name="author" content="André-Pascal Werthwein" />
+	<meta name="publisher" content="André-Pascal Werthwein" />
+	<meta name="copyright" content="André-Pascal Werthwein" />
+	<meta name="description" content="Die Tee-Enzyklopädie" />
+		
+	<!-- META-Tags zum Inhalt -->
+	<meta name="title" content="Die Tee-Enzyklopädie" />
+	<meta name="page-topic" content="Tee aus aller Welt." />
+	<meta name="keywords" content="Tea, Cha, Tee, Asia, China, Japan, Taiwan, Vietnam, Malaysia, Thailand, Marokko, Europa, England, Aracha, Shincha, Sakurayu, Fukamushicha, Tamaryokucha, Kamairicha, Genmaicha, Hojicha, Gyokuro, Yamecha, Mecha, Sencha, Kabusecha, Sakurayu, Kombucha, Ujicha, Bancha, Kukichan,  Kocha, Nihoncha, Darjeeling, Oolong, BOH, Teekanne, Teebplantage, Teeblaetter, Teezeremonie" />
+	<meta http-equiv="language" content="DE" />
+		
+	<!-- META-Tags für Suchmaschinen-Robots -->
+	<meta name="audience" content="Alle" />
+	<meta name="robots" content="index, follow" />
+	<meta name="revisit-after" content="7 days" />
+	<meta name="expires" content="never" />
+	<meta name="page-type" content="products" />
+	<meta name="allow-search" content="yes" />
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,700" rel="stylesheet">
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Roboto:300,700');
+        </style>
+    
+    <!-- Google Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- CSS-Dateien -->
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    
+    <title>Die Tee-Enzyklopädie</title>
+</head>
+<body>
+    <!-- Java Script für das Kommentar-Plugin von Facebook -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v2.12';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    
+    <!-- Navigation -->
+    <ul id="Navigation">
+        <li class="LinkText"><a href="index.html">Startseite</a></li>
+        
+        <li class="AktuelleSeite LinkText"><a href="tee.html">Tee</a></li>
+        
+        <li>
+            <a href="index.html">
+                <img src="bilder/logo/logo_250x250.jpg" srcset="bilder/logo/logo_250x250.jpg 250w,
+                                                                bilder/logo/logo_500x500.jpg 500w,
+                                                                bilder/logo/logo_1000x1000.jpg 1000w" alt="Logo" />
+            </a>
+        </li>
+            
+        <li class="LinkText"><a href="glossar.html">Glossar</a></li>
+            
+        <li class="LinkText"><a href="uebermich.html">Über mich?</a></li>
+    </ul>
+    
+    <div id="ResponsiveNavigation">
+            <div>
+                <ul id="Burger">
+                    <li id="LinieI"></li>
+                    <li id="LinieII"></li>
+                    <li id="LinieIII"></li>
+                </ul>
+                
+                <h3>Die Tee-Enzyklopädie</h3>
+            </div>
+            
+            <ul id="Navigationspunkte">
+                <li>
+                    <ul class="ZweiNavigation">
+                        <li><a class="LinkText" href="index.html">Startseite</a></li>
+                        <li><a class="LinkText" href="uebermich.html">Über mich?</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <ul class="ZweiNavigation">
+                        <li><a class="LinkText AktuelleSeite" href="tee.html">Tee</a></li>
+                        <li><a class="LinkText" href="glossar.html">Glossar</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <ul class="ZweiNavigation">
+                        <li id="QuizBeta" class="anzeigen"><a class="LinkText" href="quiz">Quiz<sup>*BETA*</sup></a></li>
+                        <li>&nbsp;</li>
+                    </ul>
+                </li>
+                
+                <li>&nbsp;</li>
+                
+                <li>
+                    <ul class="ZweiNavigation">
+                        <li><a class="LinkText" href="impressum.html">Impressum</a></li>
+                        <li><a class="LinkText" href="datenschutz.html">Datenschutz</a></li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <ul class="ZweiNavigation">
+                        <li><a class="LinkText" href="kontakt.html">Kontakt</a></li>
+                        <li>&nbsp;</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    
+    <!-- Header Slideshow -->
+    <div class="BildZeile" data-slideshow="landschaft">
+        <div class="Links" data-slideshow="landschaft"><i class="material-icons">keyboard_arrow_left</i></div>
+        <div class="Rechts" data-slideshow="landschaft"><i class="material-icons">keyboard_arrow_right</i></div>
+    </div>
+    
+    <p class="SlideshowTotal" data-slideshow="landschaft">4</p>
+    
+    <div class="Voll Weiss">
+        <div class="Einleitung">
+            <p>Es gibt viele Teesorten, mehr als hier dargestellt werden können. Die Verarbeitung, Typisierung, wie auch die Zubereitung bis hin zum Genuss unterscheiden sich je nach kulturellem Hintergrund. Zu den eigentlichen Teesorten kommen außerdem die verschiedenen »Tea Blends«, die ebenso mannigfaltig sind, wie die Teesorten selbst. »Tea Blends« sind mit schwarzem Tee jedoch üblicher als mit anderen Teesorten.</p>
+            
+            <div id="Kategorien">
+                <ul id="Filter">
+                    <li>Wähle eine Tee-Region ...</li>
+                    <li class="Filter" data-region="china">China</li>
+                    <li class="Filter" data-region="japan">Japan</li>
+                    <li class="Filter" data-region="vietnam">Vietnam</li>
+                    <li class="Filter" data-region="thailand">Thailand</li>
+                </ul>
+
+                <ul id="Darstellung">
+                    <li id="KachelAnsicht" class="Ansicht AktuelleSeite" data-darstellung="kacheln"><i class="material-icons">view_module</i></li>
+                    <li id="ListenAnsicht" class="Ansicht" data-darstellung="liste"><i class="material-icons">view_stream</i></li>
+                    <li id="ResetFilter" class="Ansicht" data-darstellung="liste"><i class="material-icons">close</i></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="TeeSorten">
+            <div class="Tee eingliedern" data-region="japan" data-detail="aracha">
+                <div class="TeeCover">
+                    <img src="bilder/tee/tee1_700x700.jpg" srcset="bilder/tee/tee1_700x700.jpg 700w,
+                                                                   bilder/tee/tee1_500x500.jpg 500w,
+                                                                   bilder/tee/tee1_250x250.jpg 250w," alt="Tee Cover" />
+                    
+                    <div class="TeeTitel">
+                        <h4>Aracha<span class="Ergaenzung">&nbsp;&nbsp;|&nbsp;&nbsp;荒茶</span></h4>
+                        <p><i class="material-icons">location_on</i>Japan</p>
+                    </div>
+                </div>
+                
+                <div class="TeeText">
+                    <h4>Aracha&nbsp;&nbsp;|&nbsp;&nbsp;荒茶</h4>
+                    
+                    <table class="TeeEigenschaften">
+                    <thead></thead>
+                    <tbody>
+                        <tr>
+                            <td><i class="material-icons">location_on</i></td>
+                            <td>Japan</td>
+                        </tr>
+                        
+                        <tr>
+                            <td><i class="material-icons">turned_in</i></td>
+                            <td>Grüner Tee&nbsp;&nbsp;|&nbsp;&nbsp;Aracha, Unrefined, Crude Tea</td>
+                        </tr>
+                        
+                        <tr>
+                            <td><i class="material-icons">update</i></td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td><i class="material-icons">opacity</i></td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td><i class="material-icons">favorite</i></td>
+                            <td>—</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                    
+                    <p class="TeeBeschreibung">Bei dieser Teeart handelt es sich um ein Produkt, das lediglich zur Weiterverarbeitung gedacht ist.</p>
+                </div>
+            </div>
+            
+                <div class="TeeDetail" data-detail="aracha">
+                    <div class="TeeDetailInhalt">
+                        <i id="Schliessen" class="material-icons Ansicht">close</i>
+                        <img src="bilder/footer/teeernte_640x360.jpg" srcset="bilder/footer/teeernte_640x360.jpg 640w,
+                                                                      bilder/footer/teeernte_1000x563.jpg 1000w,
+                                                                      bilder/footer/teeernte_1400x788.jpg 1400w,
+                                                                      bilder/footer/teeernte_2000x1125.jpg 2000w" alt="Moodbild">
+                        <div class="TeeDetailInhaltText">
+                            <h4>Aracha&nbsp;&nbsp;|&nbsp;&nbsp;荒茶</h4>
+
+                                <table class="TeeEigenschaften">
+                                <thead></thead>
+                                <tbody>
+                                    <tr>
+                                        <td><i class="material-icons">location_on</i></td>
+                                        <td>Japan</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><i class="material-icons">turned_in</i></td>
+                                        <td>Grüner Tee&nbsp;&nbsp;|&nbsp;&nbsp;Aracha, Unrefined, Crude Tea</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><i class="material-icons">update</i></td>
+                                        <td>—</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><i class="material-icons">opacity</i></td>
+                                        <td>—</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><i class="material-icons">favorite</i></td>
+                                        <td>—</td>
+                                    </tr>
+                                </tbody>
+                                </table>
+
+                            <h4>Meine Erfahrungen</h4>
+                            <p>—</p>
+
+                            <h4>Anmerkungen</h4>
+                            <p>Bei dieser Teeart handelt es sich um ein Produkt, das lediglich zur Weiterverarbeitung gedacht ist.</p>
+
+                            <br>
+                            <h4>Kommentare</h4>
+                            <div class="fb-comments" data-href="tee.html" data-width="100%" data-numposts="5"></div>
+                        </div>
+                    </div>
+                </div>
+            
+            <div class="Tee eingliedern" data-region="japan" data-detail="gyokuro">
+                <div class="TeeCover">
+                    <img src="bilder/tee/tee1_700x700.jpg" srcset="bilder/tee/tee1_700x700.jpg 700w,
+                                                                   bilder/tee/tee1_500x500.jpg 500w,
+                                                                   bilder/tee/tee1_250x250.jpg 250w," alt="Tee Cover" />
+                    
+                    <div class="TeeTitel">
+                        <h4>Gyokuro&nbsp;&nbsp;|&nbsp;&nbsp;Fremdsprache</h4>
+                        <p><i class="material-icons">location_on</i>Herkunftsland</p>
+                    </div>
+                </div>
+                
+                <div class="TeeText">
+                    <h4>Gyokuro&nbsp;&nbsp;|&nbsp;&nbsp;Fremdsprache</h4>
+                    
+                    <table class="TeeEigenschaften">
+                    <thead></thead>
+                    <tbody>
+                        <tr>
+                            <td><i class="material-icons">location_on</i></td>
+                            <td>Herkunftsland</td>
+                        </tr>
+                        
+                        <tr>
+                            <td><i class="material-icons">turned_in</i></td>
+                            <td>Teearte&nbsp;&nbsp;|&nbsp;&nbsp;Teesorte</td>
+                        </tr>
+                        
+                        <tr>
+                            <td><i class="material-icons">update</i></td>
+                            <td>Ziehzeit</td>
+                        </tr>
+                        
+                        <tr>
+                            <td><i class="material-icons">opacity</i></td>
+                            <td>Temperatur</td>
+                        </tr>
+                        
+                        <tr>
+                            <td><i class="material-icons">favorite</i></td>
+                            <td>Geschmack</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                    
+                    <p class="TeeBeschreibung">(v.o) UCLA trail 17 to 16! It's 4th and 11 with only 18 seconds left of this game. I'd say it's all over for UCLA! Bet you a million bucks UCLA win at 19 to 17. (she slaps him) Shut your filthy mouth, I'm not that kind of girl. Well maybe you are and you just don't know it yet. Get your meat hooks off of me. You heard her she said get your meat hooks, off, (Biff stands up and he's at least a foot taller than Marty) uh please. So what's it to you, butthead. You know you've been looking for a… (spots Strickland over Marty's shoulder) since you're new here, I'm gonna cut you a break, today. So why don't you make like a tree, and get out of here.</p>
+                </div>
+            </div>
+            
+                <div class="TeeDetail" data-detail="gyokuro">
+                    <div class="TeeDetailInhalt">
+                        <i id="Schliessen" class="material-icons Ansicht">close</i>
+                        <img src="bilder/footer/teeernte_640x360.jpg" srcset="bilder/footer/teeernte_640x360.jpg 640w,
+                                                                      bilder/footer/teeernte_1000x563.jpg 1000w,
+                                                                      bilder/footer/teeernte_1400x788.jpg 1400w,
+                                                                      bilder/footer/teeernte_2000x1125.jpg 2000w" alt="Moodbild">
+                        <div class="TeeDetailInhaltText">
+                            <h4>Gyokuro&nbsp;&nbsp;|&nbsp;&nbsp;荒茶</h4>
+
+                                <table class="TeeEigenschaften">
+                                <thead></thead>
+                                <tbody>
+                                    <tr>
+                                        <td><i class="material-icons">location_on</i></td>
+                                        <td>Japan</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><i class="material-icons">turned_in</i></td>
+                                        <td>Grüner Tee&nbsp;&nbsp;|&nbsp;&nbsp;Gyokuro — »edler Tautropfen«</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><i class="material-icons">update</i></td>
+                                        <td>~ 30 Sekunden</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><i class="material-icons">opacity</i></td>
+                                        <td>~ 50—60 °C</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><i class="material-icons">favorite</i></td>
+                                        <td>aromatisch, mild</td>
+                                    </tr>
+                                </tbody>
+                                </table>
+
+                            <h4>Meine Erfahrungen</h4>
+                            <p>—</p>
+
+                            <h4>Anmerkungen</h4>
+                            <p>Diese Teesorte kann mehrfach aufgegossen und gilt als eine der hochwertigsten japanischen Teesorten. Preislich schwankt die Sorte zwischen 18—200€/100g in Abhängigkeit von der Qualität.</p>
+
+                            <br>
+                            <h4>Kommentare</h4>
+                            <div class="fb-comments" data-href="tee.html" data-width="100%" data-numposts="5"></div>
+                        </div>
+                    </div>
+                </div>
+            
+            <div class="Tee eingliedern" data-region="japan" data-detail="sakurayu">
+                <div class="TeeCover">
+                    <img src="bilder/tee/tee1_700x700.jpg" srcset="bilder/tee/tee1_700x700.jpg 700w,
+                                                                   bilder/tee/tee1_500x500.jpg 500w,
+                                                                   bilder/tee/tee1_250x250.jpg 250w," alt="Tee Cover" />
+                    
+                    <div class="TeeTitel">
+                        <h4>Sakurayu&nbsp;&nbsp;|&nbsp;&nbsp;桜湯</h4>
+                        <p><i class="material-icons">location_on</i>Japan</p>
+                    </div>
+                </div>
+                
+                <div class="TeeText">
+                    <h4>Sakurayu&nbsp;&nbsp;|&nbsp;&nbsp;桜湯</h4>
+                    
+                    <table class="TeeEigenschaften">
+                    <thead></thead>
+                    <tbody>
+                        <tr>
+                            <td><i class="material-icons">location_on</i></td>
+                            <td>Japan</td>
+                        </tr>
+                        
+                        <tr>
+                            <td><i class="material-icons">turned_in</i></td>
+                            <td>kein echter Tee&nbsp;&nbsp;|&nbsp;&nbsp;Sakurayu</td>
+                        </tr>
+                        
+                        <tr>
+                            <td><i class="material-icons">update</i></td>
+                            <td>beliebig</td>
+                        </tr>
+                        
+                        <tr>
+                            <td><i class="material-icons">opacity</i></td>
+                            <td>beliebig</td>
+                        </tr>
+                        
+                        <tr>
+                            <td><i class="material-icons">favorite</i></td>
+                            <td>salzig, fruchtig</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                    
+                    <p class="TeeBeschreibung">Dies ist einer der ganz besonderen Varianten aus der Teekultur Japans.</p>
+                </div>
+            </div>
+            
+                <div class="TeeDetail" data-detail="sakurayu">
+                    <div class="TeeDetailInhalt">
+                        <i id="Schliessen" class="material-icons Ansicht">close</i>
+                        <img src="bilder/footer/teeernte_640x360.jpg" srcset="bilder/footer/teeernte_640x360.jpg 640w,
+                                                                      bilder/footer/teeernte_1000x563.jpg 1000w,
+                                                                      bilder/footer/teeernte_1400x788.jpg 1400w,
+                                                                      bilder/footer/teeernte_2000x1125.jpg 2000w" alt="Moodbild">
+                        <div class="TeeDetailInhaltText">
+                            <h4>Sakurayu&nbsp;&nbsp;|&nbsp;&nbsp;桜湯</h4>
+
+                                <table class="TeeEigenschaften">
+                                <thead></thead>
+                                <tbody>
+                                    <tr>
+                                        <td><i class="material-icons">location_on</i></td>
+                                        <td>Japan</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><i class="material-icons">turned_in</i></td>
+                                        <td>kein echter Tee&nbsp;&nbsp;|&nbsp;&nbsp;Sakurayu</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><i class="material-icons">update</i></td>
+                                        <td>beliebig</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><i class="material-icons">opacity</i></td>
+                                        <td>beliebig</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><i class="material-icons">favorite</i></td>
+                                        <td>salzig, fruchtig</td>
+                                    </tr>
+                                </tbody>
+                                </table>
+
+                            <h4>Meine Erfahrungen</h4>
+                            <p>—</p>
+
+                            <h4>Anmerkungen</h4>
+                            <p>Diese »Teesorte«, die keinen echten Tee enthält, ist etwas ganz besonderes in Japans reicher Teekultur. Es handelt sich dabei um in Salz getrocknete Kirschblüten, die im Spätfrühling geerntet werden. Diese Teesorte wird in Japan meist zu Hochzeiten, als Zeichen des Neubeginns ausgeschenkt.</p>
+
+                            <br>
+                            <h4>Kommentare</h4>
+                            <div class="fb-comments" data-href="tee.html" data-width="100%" data-numposts="5"></div>
+                        </div>
+                    </div>
+                </div>
+            
+            <div class="Tee eingliedern" data-region="china" data-detail="">
+                <div class="TeeCover">
+                    <img src="bilder/tee/tee1_700x700.jpg" srcset="bilder/tee/tee1_700x700.jpg 700w,
+                                                                   bilder/tee/tee1_500x500.jpg 500w,
+                                                                   bilder/tee/tee1_250x250.jpg 250w," alt="Tee Cover" />
+                    
+                    <div class="TeeTitel">
+                        <h4>Pu-Erh-Tee&nbsp;&nbsp;|&nbsp;&nbsp;普洱茶</h4>
+                        <p><i class="material-icons">location_on</i>China</p>
+                    </div>
+                </div>
+                
+                <div class="TeeText">
+                    <h4>Pu-Erh-Tee&nbsp;&nbsp;|&nbsp;&nbsp;普洱茶</h4>
+                    
+                    <table class="TeeEigenschaften">
+                    <thead></thead>
+                    <tbody>
+                        <tr>
+                            <td><i class="material-icons">location_on</i></td>
+                            <td>China</td>
+                        </tr>
+                        
+                        <tr>
+                            <td><i class="material-icons">turned_in</i></td>
+                            <td>eigene Art/Ursprungstee&nbsp;&nbsp;|&nbsp;&nbsp;Pu-Erh-Tee</td>
+                        </tr>
+                        
+                        <tr>
+                            <td><i class="material-icons">update</i></td>
+                            <td>~ 30 Sekunden</td>
+                        </tr>
+                        
+                        <tr>
+                            <td><i class="material-icons">opacity</i></td>
+                            <td>~ 95 °C</td>
+                        </tr>
+                        
+                        <tr>
+                            <td><i class="material-icons">favorite</i></td>
+                            <td>erdig</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                    
+                    <p class="TeeBeschreibung">»Pu-Erh-Tee« ist einer der Ursprungstees aus China. Diese Teesorte ist besonders schwierig zu klassifizieren.</p>
+                </div>
+            </div>
+            
+                <div class="TeeDetail" data-detail="">
+                    <div class="TeeDetailInhalt">
+                        <i id="Schliessen" class="material-icons Ansicht">close</i>
+                        <img src="bilder/footer/teeernte_640x360.jpg" srcset="bilder/footer/teeernte_640x360.jpg 640w,
+                                                                      bilder/footer/teeernte_1000x563.jpg 1000w,
+                                                                      bilder/footer/teeernte_1400x788.jpg 1400w,
+                                                                      bilder/footer/teeernte_2000x1125.jpg 2000w" alt="Moodbild">
+                        <div class="TeeDetailInhaltText">
+                            <h4>Pu-Erh-Tee&nbsp;&nbsp;|&nbsp;&nbsp;普洱茶</h4>
+
+                                <table class="TeeEigenschaften">
+                                <thead></thead>
+                                <tbody>
+                                    <tr>
+                                        <td><i class="material-icons">location_on</i></td>
+                                        <td>China</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><i class="material-icons">turned_in</i></td>
+                                        <td>kein echter Tee&nbsp;&nbsp;|&nbsp;&nbsp;Pu-Erh-Tee</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><i class="material-icons">update</i></td>
+                                        <td>~ 30 Sekunden</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><i class="material-icons">opacity</i></td>
+                                        <td>~ 95 °C</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td><i class="material-icons">favorite</i></td>
+                                        <td>erdig</td>
+                                    </tr>
+                                </tbody>
+                                </table>
+
+                            <h4>Meine Erfahrungen</h4>
+                            <p>—</p>
+
+                            <h4>Anmerkungen</h4>
+                            <p>»Pu-Erh-Tee« ist einer der Ursprungstees aus China. Diese Teesorte ist besonders schwierig zu klassifizieren, denn in China wird unter anderem »Schwarztee« als »Roter Tee« bezeichnet. Das Besondere an diesem Tee ist die lange Lagerung, die dem Tee den außergewöhnlichen Geschmack verleiht.</p>
+
+                            <br>
+                            <h4>Kommentare</h4>
+                            <div class="fb-comments" data-href="tee.html" data-width="100%" data-numposts="5"></div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        
+        <br>
+
+    </div>
+    
+    <div id="ObenButton">
+        <i class="material-icons">keyboard_arrow_up</i>
+    </div>
+    
+    <!-- Footer -->
+    <div id="Footer">
+        <div>
+            <img src="bilder/footer/teeernte_640x360.jpg" srcset="bilder/footer/teeernte_640x360.jpg 640w,
+                                                                  bilder/footer/teeernte_1000x563.jpg 1000w,
+                                                                  bilder/footer/teeernte_1400x788.jpg 1400w,
+                                                                  bilder/footer/teeernte_2000x1125.jpg 2000w" alt="Moodbild">
+        </div>
+        
+        <div>
+            <h3>Über mich?</h3>
+            <p>In meiner Freizeit und auf meinen Reisen beschäftige ich mich immer wieder mit dem Thema »Tee«. Meine Erfahrungen, wie auch mein Wissen möchte ich mit Dir hier teilen.</p>
+        </div>
+        
+        <div>
+            <h3>Kontakt</h3>
+            <p>Wenn du Fragen, Anregungen oder die ein oder andere Tee-Empfehlung hast, dann lass' hören:</p>
+            <p><i class="material-icons">mail_outline</i><a class="LinkText" href="mailto:info@andrewerthwein.de">info@andrewerthwein.de</a></p>
+            <p>Oder Du nutzt mein Kontaktformular: </p>
+            <p><i class="material-icons">inbox</i><a class="LinkText" href="kontakt.html">zum Kontaktformular</a></p>
+        </div>
+    </div>
+    
+    <!-- Copyright -->
+    <div id="Copyright">
+        <marquee class="anzeigen">Java Script ist in Deinem Browser deaktiviert. Für eine optimierte Darstellung/Funtkionalität dieser Website, bitte aktiviere Java Script in deinem Browser.</marquee>
+        <p>© 2018 <a class="LinkText" href="https://andrewerthwein.de" target="_blank">André-Pascal Werthwein</a></p>
+        <p><a class="LinkText" href="impressum.html">Impressum</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a class="LinkText" href="datenschutz.html">Datenschutz</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a class="LinkText" href="sitemap.html">Sitemap</a></p>
+    </div>
+    
+    <!-- Java Script -->
+    <!-- Seitenaufbau -->
+    <script src="javascript/seitenaufbau.js"></script>
+    
+    <!-- Nach-Oben-Button -->
+    <script src="javascript/button.js"></script>
+    
+    <!-- Slideshow -->
+    <script src="javascript/slideshow.js"></script>
+    
+    <!-- Teearten und Teesorten -->
+    <script src="javascript/tee.js"></script>
+    
+    <!-- Responsive Navigation -->
+    <script src="javascript/responsivenavigation.js"></script>
+</body>
+</html>

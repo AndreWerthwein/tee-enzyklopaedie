@@ -1,0 +1,779 @@
+html {font-size: 1em;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300; }
+
+marquee,
+p, li, td {font-size: 90%;
+           line-height: 1.4; }
+
+    li li,
+    li p {font-size: 100%; }
+
+    p {margin-bottom: 10px; }
+    
+    li .material-icons,
+    dd .material-icons,
+    td .material-icons,
+    p .material-icons {font-size: 1.1em;
+                       vertical-align: middle;
+                       margin-right: 10px; }
+        
+        i {font-style: italic; }
+
+h1, h2, h3, h4 {font-weight: 700;
+                margin-bottom: 10px; }
+
+    h1 {font-size: 2em; }
+
+    h2 {font-size: 1.6em; }
+
+    h3 {font-size: 1.4em; }
+
+    h4 {font-size: 1.2em; }
+
+a,
+a:hover,
+a:focus,
+a:active {text-decoration: none; 
+          color: inherit;
+          z-index: 3; }
+
+.Anmerkung {color: lightgray;
+            margin-left: 30px; }
+
+/* Einblenden Animationen */
+.anzeigen {display: block !Important;
+           transition: all 0.6s ease;
+           -webkit-transition: all 0.6s ease; }
+
+.eingliedern {display: inline-block !Important;
+              transition: all 0.6s ease;
+              -webkit-transition: all 0.6s ease; }
+
+.einblenden {opacity: 1 !Important;
+             transition: opacity 0.6s ease;
+             -webkit-transition: opacity 0.6s ease; }
+
+.einschieben {transform: translateX(0) !Important;
+              transition: all 0.6s ease;
+              -webkit-transition: all 0.6s ease; }
+
+/* Navigation */
+#Navigation {width: 100%;
+             background-color: white; 
+             display: flex;
+             justify-content: space-around;
+             align-items: flex-end;
+             position: fixed;
+             top: 0px;
+             left: 0px;
+             z-index: 12; }
+
+#Navigation li {width: 20%;
+                text-align: center;
+                font-size: 1.2em;
+                padding: 20px 0px; }
+
+#Navigation li:nth-child(3) {padding: 0px; }
+
+#Navigation li img {width: 60%;
+                    margin-left: calc(40%/2);
+                    margin-right: calc(40%/2); }
+
+.AktuelleSeite {color: rgba(0, 0, 0, 0.1); }
+
+/* Responsive Navigation */
+#QuizBeta {display: none; }
+
+#ResponsiveNavigation {width: 100%; 
+                       position: fixed;
+                       top: 0px;
+                       left: 0px; 
+                       z-index: 10;
+                       display: none; }
+
+#ResponsiveNavigation div:first-child {display: flex;
+                                       justify-content: space-around;
+                                       align-items: center;
+                                       background-color: rgba(255, 255, 255, 1); }
+
+#ResponsiveNavigation div ul {width: 40px;
+                              margin-right: 10px; }
+
+#ResponsiveNavigation div h3 {width: calc(100% - 59px);
+                              margin-bottom: 0px; }
+#Burger {width: 40px;
+         height: 40px;
+         margin: 4px; 
+         background-color: #E94235;
+         border-radius: 50%;
+         display: flex;
+         flex-direction: column; 
+         justify-content: space-around;}
+
+#Burger li {width: 100%;
+            height: 2px;
+            background-color: rgba(0, 0, 0, 1);
+            opacity: 1; 
+            transition: all 0.6s ease;
+            -webkit-transition: all 0.6s ease;}
+
+#Navigationspunkte {width: calc(100% - 50px);
+                    margin-left: auto; 
+                    height: 0px;
+                    overflow: hidden;
+                    background-color: rgba(255, 255, 255, 1);
+                    transition: all 0.6s ease;
+                    -webkit-transition: all 0.6s ease; }
+
+    .NavigationspunkteAnzeigen {height: 160px !Important;
+                                transition: all 0.6s ease;
+                                -webkit-transition: all 0.6s ease; }
+
+#Navigationspunkte li {width: 100%; 
+                       height: 25px;
+                       vertical-align: middle; }
+
+#Navigationspunkte li a {display: block; 
+                         width: 100% !Important; }
+
+.KreuzI {transform: rotate(-45deg) translateY(10px) translateX(-9.5px);
+         transition: all 0.6s ease;
+         -webkit-transition: all 0.6s ease; }
+
+.KreuzII {opacity: 0 !Important;
+          transition: all 0.6s ease;
+          -webkit-transition: all 0.6s ease;}
+
+.KreuzIII {transform: rotate(45deg) translateY(-9px) translateX(-9.5px);
+           transition: all 0.6s ease;
+           -webkit-transition: all 0.6s ease; }
+
+/* Nach-Oben-Button */
+#ObenButton {width: 40px;
+             padding-top: 6px;
+             padding-bottom: 6px;
+             border-radius: 50%;
+             position: fixed;
+             right: 20px; 
+             bottom: 10px;
+             opacity: 0;
+             text-align: center; 
+             transition: all 0.6 ease;
+             -webkit-transition: all 0.6 ease; }
+
+#ObenButton:hover,
+#ObenButton:focus,
+#ObenButton:active {cursor: pointer; 
+                    background-color: #E94235;
+                    transition: all 0.6 ease;
+                    -webkit-transition: all 0.6 ease; }
+
+/* Zitate */
+#Zitate {padding: 60px;
+         text-align: center; }
+
+#Zitate h4 {font-weight: 300; }
+
+#Zitate p {margin-bottom: 0px;
+           color: rgba(0, 0, 0, 0.1); }
+
+/* Inhalt */
+.BildZeile {width: 100% !Important;
+            height: 600px;
+            z-index: 1 !Important;
+            background-image: url("bilder/landschaft/landschaft1.jpg");
+            background-size: cover;
+            background-position: center; 
+            background-repeat: no-repeat;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between; }
+
+.Links, .Rechts {width: 100px;
+                 height: 100%;
+                 z-index: 1 !Important;
+                 text-align: center;
+                 display: flex;
+                 align-items: center;
+                 background-color: rgba(255, 255, 255, 0.4); 
+                 opacity: 0.4;
+                 transition: all 0.6s ease;
+                 -webkit-transition: all 0.6s ease;}
+
+.Links i,
+.Rechts i {width: 100%;
+           font-size: 4em;
+           color: rgba(255, 255, 255, 0.8);
+           margin-top: 160px; }
+
+.Rechts:hover,
+.Rechts:focus,
+.Rechts:active,
+.Links:hover,
+.Links:focus,
+.Links:active {cursor: pointer; 
+               opacity: 1;
+               transition: all 0.6s ease;
+               -webkit-transition: all 0.6s ease; }
+
+.SlideshowTotal {display: none; }
+/* Eine Spalte */
+.Eins {padding: 10px 20px; }
+
+.Voll {padding: 10px 20px;
+       margin-left: auto;
+       margin-right: auto; }
+
+.TeeSorten,
+.Voll .Einleitung {width: 96%;
+                   margin-left: auto;
+                   margin-right: auto; }
+
+.Zeile {padding: 10px 20px;
+        display: flex;
+        justify-content: space-around; }
+
+.Zeile div img {width: 100%; }
+
+/* Zwei Spalten */
+.Zwei {padding: 10px 20px; 
+       display: flex;
+       justify-content: space-around;
+       align-content: flex-start; }
+
+    .Voll .Zwei {padding: 0px; }
+
+.Zwei div,
+.Zwei li {width: 46%;
+          padding-bottom: 10px; }
+
+.Zwei div img {width: 100%; 
+               height: auto;
+               z-index: 9; }
+
+.Zwei ul {list-style-type: circle;
+          margin-left: 30px; }
+
+.Zwei ul li {width: 100%; }
+
+/* Zwei Spalten Text und eine Doppelspalte Bild */
+.ZweiEins div {width: 22.5%;
+               padding-bottom: 10px; }
+
+
+.ZweiEins div:last-child {width: 49%;
+                          margin-top: -40px;
+                          z-index: 10 !Important; }
+
+/* Drei Spalten */
+.Drei {padding: 10px 20px; 
+       display: flex;
+       justify-content: space-around; }
+
+.Drei div {width: 30%; }
+
+/* Vier Spalten */
+.Vier {padding: 10px 20px; 
+       display: flex;
+       justify-content: space-around;
+       background-color: rgba(255, 255, 255, 1); }
+
+.Vier div {width: 22.5%; }
+
+/* Grauer Hintergrund */
+.Grau {background-color: rgba(0, 0, 0, 0.03); }
+
+/* Weißer Hintergrund */
+.Weiss {background-color: rgba(255, 255, 255, 1); }
+
+/* Vertikale Ausrichtung des Flexbox-Contents */
+.Unten {align-items: flex-end; }
+
+.Oben {align-items: flex-start; }
+
+.Kontakt tr td:first-child {width: 20px !Important; }
+
+.Kontakt img {width: 15px !Important;
+              vertical-align: middle;
+              margin-right: 10px; }
+
+.Kontakt tr:nth-child(2) img {width: 13px !Important; }
+
+.Kontakt tr:nth-child(4) img {width: 17px !Important; }
+
+.Kontakt tr:nth-child(6) img {width: 17px !Important; }
+
+/* Teearten und Teesorten */
+#Kategorien {display: flex;
+             justify-content: space-around;
+             align-items: flex-start;
+             vertical-align: middle; }
+
+#Filter {width: 95%;
+         height: 20px;
+         margin-bottom: 20px; 
+         overflow: hidden;
+         transition: height 0.6s ease;
+         -webkit-transition: height 0.6s ease; }
+
+    .FilterAnzeigen {height: 100px !Important;
+                     transition: height 0.6s ease;
+                     -webkit-transition: height 0.6s ease; }
+
+#Filter li {width: 100%;
+            height: 20px; }
+
+#Filter li:first-child {color: rgba(0, 0, 0, 0.25); }
+
+#Filter li:first-child:hover,
+#Filter li:first-child:focus,
+#Filter li:first-child:active {cursor: pointer; }
+
+.FilterAnzeigen li:first-child:hover,
+.FilterAnzeigen li:first-child:focus,
+.FilterAnzeigen li:first-child:active {cursor: not-allowed !Important; }
+
+#Darstellung {width: 60px; }
+
+#Darstellung {display: flex;
+              justify-content: space-around;
+              align-items: flex-start; }
+
+#Darstellung li {width: 30px; }
+
+#Darstellung li .material-icons {font-size: 2em;
+                                 margin: 0px; 
+                                 text-align: center; }
+
+.Tee {width: calc(89%/4); 
+      overflow: hidden;
+      margin-left: calc(10%/9);
+      margin-right: calc(10%/9);
+      margin-bottom: 10px;
+      display: inline-block;
+      display: none; }
+
+.Tee .TeeText {display: none; }
+
+    .Liste {width: 100%;
+            display: flex !Important;
+            justify-content: space-around;
+            align-items: flex-start;
+            margin-bottom: 10px; }
+
+    .Liste .TeeCover {width: 22.5%; 
+                      height: auto;
+                      margin-right: 10px; }
+
+    .Liste .TeeText {display: block; }
+
+    .Liste .TeeTitel {top: -70px; }
+
+.TeeCover {width: 100%; }
+
+.TeeCover:hover,
+.TeeCover:focus,
+.TeeCover:active {cursor: pointer; }
+
+.TeeCover img {width: 100%; }
+
+.TeeTitel p {margin-bottom: 0px; }
+
+.TeeTitel {text-align: center;
+           padding: 10px; 
+           background-color: rgba(255, 255, 255, 1);
+           position: relative;
+           top: -72px;
+           margin-bottom: -70px; 
+           opacity: 0;
+           transition: opacity 0.6s ease;
+           -webkit-transition: opacity 0.6s ease; }
+
+.TeeCover:hover .TeeTitel,
+.TeeCover:focus .TeeTitel,
+.TeeCover:active .TeeTitel {opacity: 1;
+                            transition: opacity 0.6s ease;
+                            -webkit-transition: opacity 0.6s ease; }
+
+.TeeText {width: calc(100%  - (22.5% + 10px)); }
+
+.TeeEigenschaften {margin-bottom: 10px; }
+
+.TeeDetail {width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.5);
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            z-index: 13;
+            display: none; 
+            overflow: auto;}
+
+#Schliessen {margin-top: 5px; 
+             margin-right: 5px;
+             margin-bottom: 5px; 
+             margin-left: calc(100% - 29px); }
+
+.TeeDetailInhalt {width: 50%;
+                  margin-left: auto;
+                  margin-right: auto;
+                  margin-top: 5%; 
+                  background-color: rgba(255, 255, 255, 1);
+                  border-bottom: 10px #E94235 solid;
+                  margin-bottom: 5%;
+                  }
+
+.TeeDetailInhalt img {width: 100%; 
+                      height: auto; }
+
+.TeeDetailInhaltText {padding: 20px; }
+/* Glossar */
+#GlossarNavigation {width: 60%; 
+                    margin-left: auto;
+                    margin-right: auto;
+                    display: flex;
+                    justify-content: space-around;
+                    margin-bottom: 20px; }
+
+#GlossarNavigation li {width: 20px;
+                       height: 20px;
+                       text-align: center;
+                       transition: border 0.6s ease;
+                       -webkit-transition: border 0.6s ease; }
+
+.InitialSeite {display: none;
+               transform: all 0.6s ease; }
+
+.InitialSeite ul {display: flex;
+                  justify-content: space-around;
+                  align-content: flex-start; }
+
+.InitialSeite li {width: 22.5%; }
+
+
+.InitialSeite dd {display: none;
+                  transform: all 0.6s ease; }
+
+.InitialSeite dd ul {display: block;
+                     list-style-type: circle;
+                     margin-left: 40px; }
+
+.InitialSeite dd li {width: 100% !Important; }
+
+.InitialSeite dt {font-size: 1.2em;
+                  font-weight: 700;
+                  margin-bottom: 10px; }
+
+.InitialSeite dt:hover,
+.InitialSeite dt:focus,
+.InitialSeite dt:active {cursor: pointer; }
+
+.ausgewaehlt {background-color: #E94235; }
+
+/* Quiz Popup */
+sup {font-size: 75%; 
+     color: #E94235; }
+
+h3 sup {font-weight: 300; }
+
+#QuizPopup {width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.5);
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            z-index: 13;
+            display: none; 
+            opacity: 0;
+            transition: opacity 0.6s ease;
+            -webkit-transition: opacity 0.6s ease; }
+
+#QuizPopupInhalt {width: 50%;
+                  margin-left: auto;
+                  margin-right: auto;
+                  margin-top: 10%;
+                  transform: translateX(150%);
+                  background-color: rgba(255, 255, 255, 1);
+                  border-bottom: 10px #E94235 solid;
+                  transition: all 0.6s ease;
+                  -webkit-transition: all 0.6s ease; } 
+
+#QuizPopupInhalt img {width: 100%;
+                      height: auto; }
+
+#QuizPopupInhaltText {padding: 20px; }
+
+/* Quiz */
+.Frage {width: 100% !Important;
+        padding: 0px !Important;
+        display: none; }
+
+.Fragestellung {width: 100% !Important;
+                padding: 0px !Important;
+                margin-bottom: 10px;
+                margin-top: 20px; }
+
+.Antworten {width: 100% !Important;
+            padding: 0px !Important; }
+
+.Antworten ul {list-style-type: none;
+               display: flex; 
+               justify-content: space-between;
+               align-items: center;
+               margin: 0px; }
+
+.Antworten ul li {width: 48%;
+                  height: 20px;
+                  padding: 10px 0px;
+                  margin-bottom: 10px; 
+                  border-bottom: 1px black solid; }
+
+.Antwort p {padding: 0px 10px; }
+
+#Ergebnisse li {width: calc(100%/3); }
+
+.Ergebnisse {width: 100%;
+             list-style-type: none !Important;
+             margin: 0px !Important;
+             display: flex; 
+             justify-content: space-between;
+             align-items: center; }
+
+.Ergebnisse li {vertical-align: middle;
+                transition: all 0.6s ease;
+                -webkit-transition: all 0.6s ease; }
+
+.Ergebnisse li:first-child {width: 80px; }
+
+.Ergebnisse li:last-child {width: calc(100% - 80px) !Important;
+                           background-color: rgba(0, 0, 0, 0.03);
+                           height: 10px !Important; 
+                           padding: 0px !Important;
+                           margin-top: -10px !Important;  }
+
+#RichtigeAntworten li:last-child div {background-color: #3AA757;
+                                      margin: 0px;
+                                      padding: 0px;
+                                      height: 10px;
+                                      width: 0px;
+                                      transition: all 0.6s ease;
+                                      -webkit-transition: all 0.6s ease;  }
+
+    .richtig {background-color: #3AA757;
+              transition: all 0.6s ease;
+              -webkit-transition: all 0.6s ease; }
+
+#FalscheAntworten li:last-child div {background-color: #E94235;
+                                     margin: 0px;
+                                     padding: 0px;
+                                     height: 10px;
+                                     width: 0px;
+                                     transition: all 0.6s ease;
+                                     -webkit-transition: all 0.6s ease; }
+
+    .falsch {background-color: #E94235;
+             transition: all 0.6s ease;
+             -webkit-transition: all 0.6s ease; }
+
+#AktuelleFrage {width: 100% !Important; 
+                text-align: center; }
+
+#AlleBeantwortet {display: none;
+                  width: 100% !Important;
+                  margin: 0px;
+                  padding: 10px 0px;
+                  text-align: center; }
+
+#Spezialist {font-style: italic; }
+/* Footer */ 
+#Footer {padding: 10px 20px; 
+         display: flex;
+         justify-content: space-around;
+         background-color: rgba(0, 0, 0, 0.03); }
+
+#Footer div {width: 22.5%;
+             padding-bottom: 10px; }
+
+#Footer div:first-child {width: 49%;
+                         margin-top: -40px; }
+
+#Footer div img {width: 100%; }
+
+#Copyright {width: 100%; 
+            padding: 10px 0px;
+            text-align: center; }
+
+#Copyright p {margin-bottom: 0px; }
+
+#Copyright marquee {color: #E94235;
+                    display: none; }
+
+/* Kontaktformular */
+
+.ZweiNavigation {display: flex;
+                 justify-content: space-around; 
+                 align-content: flex-start; }
+
+.ZweiNavigation li {width: 48%;
+                    padding-left: 10px; }
+
+.Zwei div,
+.Zwei form {width: calc(48% - 10px); 
+            margin-left: auto;
+            padding: 10px; }
+
+.Zwei div form {width: 100% !Important; }
+
+.Zwei table {width: 100%; }
+
+.Zwei td {line-height: 1.4;
+          vertical-align: top; }
+
+.Zwei td:first-child {width: 30%; }
+
+.Zwei td:last-child {width: 100%; }
+
+.Zwei input {width: calc(100% - 5px);
+             border: none;
+             border-bottom: 1px black solid; }
+
+.Zwei textarea {width: calc(100% - 7px);
+                border: none;
+                height: 6em;
+                border-bottom: 1px black solid; }
+
+input, textarea {font-family: 'Roboto', sans-serif;
+                 font-size: 100%; }
+
+::-webkit-input-placeholder {font-family: 'Roboto', sans-serif;
+                             font-size: 100%;
+                             color: lightgray; }
+
+::-moz-placeholder {font-family: 'Roboto', sans-serif;
+                    font-size: 130%;
+                    color: lightgray; }
+
+:-ms-input-placeholder {font-family: 'Roboto', sans-serif;
+                        font-size: 130%;
+                        color: lightgray; }
+
+:-moz-placeholder {font-family: 'Roboto', sans-serif;
+                   font-size: 130%;
+                   color: lightgray; }
+
+#UnsichtbaresFormularfeld {display: none; }
+
+#SendenButton {width: 30%;
+               border: none;
+               height: 30px;
+               transition: all 0.6 ease;
+               -webkit-transition: all 0.6 ease; }
+
+#SendenButton:hover,
+#SendenButton:focus,
+#SendenButton:active {background-color: #E94235;
+                      transition: all 0.6 ease;
+                      -webkit-transition: all 0.6 ease; }
+
+/* Error */
+#Logo {width: 30%;
+       margin-left: calc(70%/2);
+       margin-right: calc(70%/2);
+       margin-top: 10%; }
+
+#ErrorText {padding: 10px; 
+            text-align: center; }
+
+/* Link-Text-Animation */
+.Filter,
+.Ansicht,
+.Initiale,
+.LinkText,
+.AktuelleSeite {position: relative;
+                box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                /* Erzeugt je nach Display unschöne Umbrüche, wenn längere "Text" verlinkt werden, garantiert aber den "Unterstreichen"-Effekt — Responsive Design! */
+                /* Nach Möglichkeit verlinkungen immer auf einzelne Worte reduzieren */
+                white-space: nowrap; }
+
+.Filter:after,
+.Ansicht:after,
+.Initiale:after,
+.LinkText:after {content: " ";
+                 position: absolute;
+                 left: 0;
+                 bottom: 0px;
+                 height: 10px;
+                 z-index: -1;
+                 background-color: #E94235;
+                 width: 0;
+                 -webkit-transition: width 0.6s ease;
+                 transition: width 0.6s ease; }
+
+.AktuelleSeite:after {content: " ";
+                      position: absolute;
+                      left: 0;
+                      bottom: 0px;
+                      height: 10px;
+                      z-index: -1;
+                      background-color: rgba(0, 0, 0, 0.1);
+                      width: 0;
+                      -webkit-transition: width 0.6s ease;
+                      transition: width 0.6s ease; }
+
+/* Links im Text */
+.LinkText:hover,
+.LinkText:focus,
+.LinkText:active {cursor: pointer; }
+
+.LinkText:hover:after,
+.LinkText:focus:after,
+.LinkText:active:after {width: 100% !Important; }
+
+/* Glossar-Navigation */ 
+.Initiale:hover,
+.Initiale:focus,
+.Initiale:active {cursor: pointer; }
+
+.Initiale:hover:after,
+.Initiale:focus:after,
+.Initiale:active:after {width: 100% !Important; }
+
+/* Darstellung der Teearten und Teesorten */
+.Ansicht:hover,
+.Ansicht:focus,
+.Ansicht:active {cursor: pointer; }
+
+.Ansicht:hover:after,
+.Ansicht:focus:after,
+.Ansicht:active:after {width: 100% !Important; }
+
+/* Filterfunktion der Teearten und Teesorten */
+.Filter:hover,
+.Filter:focus,
+.Filter:active {cursor: pointer; }
+
+.Filter:hover:after,
+.Filter:focus:after,
+.Filter:active:after {width: 100% !Important; }
+
+/* Scrollbar */ 
+::-webkit-scrollbar {width: 10px; }
+
+::-webkit-scrollbar-track {background: #FFFFFF; }
+
+::-webkit-scrollbar-thumb {background-color: #E94235; }
+
+/* User-Select */
+::selection {background: transparent; color: #E94235; }
+
+::-moz-selection {background: transparent; color: #E94235; }
+
+/* Unterbindung von User-Select */ 
+a, #Copyright {-webkit-touch-callout: none;
+               -webkit-user-select: none;
+               -khtml-user-select: none;
+               -moz-user-select: none;
+               -ms-user-select: none;
+               user-select: none; }

@@ -1,0 +1,149 @@
+/* iPad Pro kann ignoriert werden. */
+
+/* iPad und kleiner */
+@media all and (orientation: portrait) and (max-width: 768px) {
+    .ZweiEins div:last-child {display: none; }
+    
+    .ZweiEins div {width: 48%; }
+    
+    #Footer div:nth-child(2) {display: none; }
+    
+    #Footer div:last-child {width: 48%; }
+    
+    #Navigation {display: none; }
+    
+    #ResponsiveNavigation {display: block; }
+    
+    .BildZeile {height: 400px; }
+    
+    .Links i, .Rechts i {margin-top: 20px; }
+    
+    .InitialSeite ul {display: block; }
+    
+    .InitialSeite li {width: 100%;
+                      margin-bottom: 20px; }
+    
+    .InitialSeite dd li {margin-bottom: 0px; }
+}
+
+@media all and (max-width: 600px) {
+    .BildZeile {height: 300px; }
+    
+    .Links i, .Rechts i {margin-top: 30px; }
+    
+    .Links, .Rechts {width: 60px }
+    
+    #Footer {display: block; }
+    
+    #Footer div:first-child {display: none; }
+    
+    #Footer div:last-child {width: 100%; }
+    
+    .ZweiEins {display: block; }
+    
+    .ZweiEins div {width: 100%; }
+    
+    .Zwei {display: block; }
+    
+    .Zwei li,
+    .Zwei div {width: 100% !Important;
+               padding: 0px; }
+    
+    .Zwei form {width: 100%;
+                padding: 0px; }
+    
+    .Zwei .Leer {display: none; }
+    
+    #Logo {width: 60%;
+           margin-left: 20%;
+           margin-right: 20%; }
+    
+    .Drei {display: block; }
+    
+    .Drei div {width: 100%;  }
+    
+    #GlossarNavigation {width: 100%;
+                        padding: 0px; }
+    
+    .InitialSeite ul {display: block; }
+    
+    .InitialSeite li {width: 100%; }
+    
+    .Antworten ul {display: block; }
+    
+    .Ergaenzung {display: none; }
+    
+    .TeeTitel {display: none; }
+    
+    .TeeDetailInhalt {width: 80%; }
+    
+    .Tee {width: calc(87%/4); }
+}
+
+@media all and (orientation: landscape) and (max-height: 600px) {
+    #Navigation {display: none; }
+    
+    #ResponsiveNavigation {display: block; }
+    
+    .BildZeile {height: 250px; }
+    
+    .Links i, .Rechts i {margin-top: 35px; }
+    
+    .ZweiEins div:last-child {display: none; }
+    
+    .ZweiEins div {width: 48%; }
+    
+    #Footer div:first-child {display: none; }
+    
+    #Footer div {width: 48%; }
+    
+    .Zwei div {width: 48%;
+               padding: 0px;
+               margin: 0px; }
+    
+    .Formular .Leer {display: none; }
+    
+    .Formular {display: block !Important; }
+    
+    .Formular form {width: 100%; 
+                    padding: 0px; }
+    .Formular div:last-child {width: 100% !Important; }
+    
+    #GlossarNavigation {width: 80%; }
+    
+    .InitialSeite ul {display: block; }
+    
+    .InitialSeite li {width: 100%; }
+    
+    .Antworten ul {display: block; }
+    
+    .Antworten li {width: 100% !Important; }
+    
+    .Ergaenzung {display: none; }
+}
+
+@media all and (orientation: landscape) and (max-width: 710px) {
+    .Quiz {display: block; }
+    
+    .Quiz div {width: 100%; }
+    
+    .Quiz div:first-child {margin-bottom: 20px; }
+    
+    .Ergaenzung {display: none; }
+}
+
+
+@media all and (max-width: 330px) {
+    .Tee {width: calc(90%/2); }
+}
+/* Quiz Popup !!! */
+/* getestet: index.html */
+/* getestet: error.html */
+/* getestet: erfolg.html */
+/* getestet: sitemap.html */
+/* getestet: impressum.html */
+/* getestet: datenschutz.html */
+/* getestet: kontakt.html */
+/* getestet: uebermich.html */
+/* getestet: glosssar.html */
+/* getestet: quiz.html */

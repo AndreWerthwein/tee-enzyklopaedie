@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+    <!-- Die Tee-Enzyklopädie -->
+    <url>
+      <loc>https://teeenzyklopaedie.de/</loc>
+      <lastmod>2018-01-14T16:18:38+00:00</lastmod>
+      <priority>1.00</priority>
+    </url>
+
+    <url>
+      <loc>https://teeenzyklopaedie.de/index.html</loc>
+      <lastmod>2018-01-14T16:18:38+00:00</lastmod>
+      <priority>0.80</priority>
+    </url>
+
+    <url>
+      <loc>https://teeenzyklopaedie.de/tee.html</loc>
+      <lastmod>2018-01-14T16:18:38+00:00</lastmod>
+      <priority>0.80</priority>
+    </url>
+
+    <url>
+      <loc>https://teeenzyklopaedie.de/glossar.html</loc>
+      <lastmod>2018-01-14T16:18:38+00:00</lastmod>
+      <priority>0.80</priority>
+    </url>
+
+    <url>
+      <loc>https://teeenzyklopaedie.de/quiz.html</loc>
+      <lastmod>2018-01-14T16:18:38+00:00</lastmod>
+      <priority>0.80</priority>
+    </url>
+
+    <url>
+      <loc>https://teeenzyklopaedie.de/uebermich.html</loc>
+      <lastmod>2018-01-14T15:57:26+00:00</lastmod>
+      <priority>0.80</priority>
+    </url>
+
+    <url>
+      <loc>https://teeenzyklopaedie.de/kontakt.html</loc>
+      <lastmod>2018-01-14T15:57:28+00:00</lastmod>
+      <priority>0.80</priority>
+    </url>
+
+    <url>
+      <loc>https://teeenzyklopaedie.de/impressum.html</loc>
+      <lastmod>2018-01-14T15:57:26+00:00</lastmod>
+      <priority>0.80</priority>
+    </url>
+
+    <url>
+      <loc>https://teeenzyklopaedie.de/datenschutz.html</loc>
+      <lastmod>2018-01-14T15:57:26+00:00</lastmod>
+      <priority>0.80</priority>
+    </url>
+
+    <!-- Kontakt -->
+    <url>
+      <loc>https://anderwerthwein.de</loc>
+      <lastmod>2018-01-14T15:57:28+00:00</lastmod>
+      <priority>0.80</priority>
+    </url>
+    
+    <url>
+      <loc>https://www.xing.com/profile/AndrePascal_Werthwein</loc>
+      <lastmod>2018-01-14T15:57:28+00:00</lastmod>
+      <priority>0.80</priority>
+    </url>
+
+    <url>
+      <loc>https://www.linkedin.com/in/andr%C3%A9-pascal-werthwein-72a378144/</loc>
+      <lastmod>2018-01-14T15:57:28+00:00</lastmod>
+      <priority>0.80</priority>
+    </url>
+
+    <url>
+      <loc>https://codepen.io/AndrePW/</loc>
+      <lastmod>2018-01-14T16:16:45+00:00</lastmod>
+      <priority>0.80</priority>
+    </url>
+
+    <url>
+      <loc>https://dribbble.com/andrepascalwerthwein</loc>
+      <lastmod>2018-01-14T15:57:28+00:00</lastmod>
+      <priority>0.80</priority>
+    </url>
+    
+    <url>
+      <loc>https://www.behance.net/AndrePascalWerthwein</loc>
+      <lastmod>2018-01-14T15:57:28+00:00</lastmod>
+      <priority>0.80</priority>
+    </url>
+</urlset>
